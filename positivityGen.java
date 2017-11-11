@@ -7,7 +7,7 @@ public class positivityGen
       String noun = noun();
       String adjective = adjGen();
       String aOrAn = aOrAn(adjective);
-      System.out.println("You are"+ aOrAn + " " + adjective + " "+ noun+ "!");
+      System.out.println("You are "+ aOrAn + " " + adjective + " "+ noun+ "!");
    }
    public static String noun()
    {
@@ -52,7 +52,6 @@ public class positivityGen
       noun[36] = "lionheart";
       noun[37] = "princess";
       noun[38] = "cupcake";
-      noun[39] = "tamale";
       String Noun = noun[random];
       return Noun;
    }
@@ -96,7 +95,6 @@ public class positivityGen
       adj[33]= "limitless";
       adj[34]= "important";
       adj[35]= "impressive";
-      adj[36]= "stunning";
       String Adjective = adj[random];
       return Adjective;
    }
