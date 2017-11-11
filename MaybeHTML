@@ -1,0 +1,114 @@
+<div style='background:#FFFFFF; font-family: Courier New, Courier; font-size: 10pt; COLOR: #000000; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;'><strong><font color='#7f0055'>import</font></strong>&nbsp;java.util.*;
+<br/>
+<br/><strong><font color='#7f0055'>public</font></strong>&nbsp;<strong><font color='#7f0055'>class</font></strong>&nbsp;positivityGen
+<br/>{
+<br/>&nbsp;&nbsp;&nbsp;<strong><font color='#7f0055'>public</font></strong>&nbsp;<strong><font color='#7f0055'>static</font></strong>&nbsp;<strong><font color='#7f0055'>void</font></strong>&nbsp;main(String[]&nbsp;args)
+<br/>&nbsp;&nbsp;&nbsp;{
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(<font color='#2a00ff'>"On&nbsp;a&nbsp;scale&nbsp;from&nbsp;1-9,&nbsp;how&nbsp;sad&nbsp;are&nbsp;you?"</font>);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Scanner&nbsp;input&nbsp;=&nbsp;<strong><font color='#7f0055'>new</font></strong>&nbsp;Scanner(System.in);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><font color='#7f0055'>int</font></strong>&nbsp;sadLevel&nbsp;=&nbsp;input.nextInt();
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><font color='#7f0055'>if</font></strong>(sadLevel==1)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(<font color='#2a00ff'>"You're&nbsp;too&nbsp;happy&nbsp;for&nbsp;this&nbsp;program...&nbsp;please&nbsp;leave."</font>);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><font color='#7f0055'>else</font></strong>&nbsp;<strong><font color='#7f0055'>if</font></strong>&nbsp;(sadLevel>=2&nbsp;&&&nbsp;sadLevel<=8)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String&nbsp;noun&nbsp;=&nbsp;noun();
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String&nbsp;adjective&nbsp;=&nbsp;adjGen();
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(<font color='#2a00ff'>"You&nbsp;are&nbsp;"</font>+&nbsp;adjective&nbsp;+&nbsp;<font color='#2a00ff'>"&nbsp;"</font>+&nbsp;noun+&nbsp;<font color='#2a00ff'>"!"</font>);&nbsp;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><font color='#7f0055'>else</font></strong>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(<font color='#2a00ff'>"Please&nbsp;go&nbsp;to&nbsp;healthcenter.gwu.edu&nbsp;for&nbsp;professional&nbsp;help."</font>);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+<br/>&nbsp;&nbsp;&nbsp;}
+<br/>&nbsp;&nbsp;&nbsp;<strong><font color='#7f0055'>public</font></strong>&nbsp;<strong><font color='#7f0055'>static</font></strong>&nbsp;String&nbsp;noun()
+<br/>&nbsp;&nbsp;&nbsp;{
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><font color='#7f0055'>int</font></strong>&nbsp;random&nbsp;=&nbsp;(<strong><font color='#7f0055'>int</font></strong>)(Math.random()*38);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String[]&nbsp;noun&nbsp;=&nbsp;<strong><font color='#7f0055'>new</font></strong>&nbsp;String[39];
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;noun[0]&nbsp;=&nbsp;<font color='#2a00ff'>"ace-in-the-hole"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;noun[1]&nbsp;=&nbsp;<font color='#2a00ff'>"benefactor"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;noun[2]&nbsp;=&nbsp;<font color='#2a00ff'>"catalyst"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;noun[3]&nbsp;=&nbsp;<font color='#2a00ff'>"champion"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;noun[4]&nbsp;=&nbsp;<font color='#2a00ff'>"connoisseur"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;noun[5]&nbsp;=&nbsp;<font color='#2a00ff'>"devotee"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;noun[6]&nbsp;=&nbsp;<font color='#2a00ff'>"dreamboat"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;noun[7]&nbsp;=&nbsp;<font color='#2a00ff'>"enchantress"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;noun[8]&nbsp;=&nbsp;<font color='#2a00ff'>"angel"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;noun[9]&nbsp;=&nbsp;<font color='#2a00ff'>"artisan"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;noun[10]&nbsp;=&nbsp;<font color='#2a00ff'>"beauty"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;noun[11]&nbsp;=&nbsp;<font color='#2a00ff'>"brain"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;noun[12]&nbsp;=&nbsp;<font color='#2a00ff'>"dude"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;noun[13]&nbsp;=&nbsp;<font color='#2a00ff'>"comrade"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;noun[14]&nbsp;=&nbsp;<font color='#2a00ff'>"dear"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;noun[15]&nbsp;=&nbsp;<font color='#2a00ff'>"delight"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;noun[16]&nbsp;=&nbsp;<font color='#2a00ff'>"doll"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;noun[17]&nbsp;=&nbsp;<font color='#2a00ff'>"dawg"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;noun[18]&nbsp;=&nbsp;<font color='#2a00ff'>"fashionista"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;noun[19]&nbsp;=&nbsp;<font color='#2a00ff'>"maxxinista©"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;noun[20]&nbsp;=&nbsp;<font color='#2a00ff'>"garden"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;noun[21]&nbsp;=&nbsp;<font color='#2a00ff'>"gem"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;noun[22]&nbsp;=&nbsp;<font color='#2a00ff'>"genius"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;noun[23]&nbsp;=&nbsp;<font color='#2a00ff'>"tamale"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;noun[24]&nbsp;=&nbsp;<font color='#2a00ff'>"goddess"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;noun[25]&nbsp;=&nbsp;<font color='#2a00ff'>"guardian"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;noun[26]&nbsp;=&nbsp;<font color='#2a00ff'>"mom"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;noun[27]&nbsp;=&nbsp;<font color='#2a00ff'>"helper"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;noun[28]&nbsp;=&nbsp;<font color='#2a00ff'>"hero"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;noun[29]&nbsp;=&nbsp;<font color='#2a00ff'>"hotshot"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;noun[30]&nbsp;=&nbsp;<font color='#2a00ff'>"go-getter"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;noun[31]&nbsp;=&nbsp;<font color='#2a00ff'>"jester"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;noun[32]&nbsp;=&nbsp;<font color='#2a00ff'>"spirit"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;noun[33]&nbsp;=&nbsp;<font color='#2a00ff'>"kingpin"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;noun[34]&nbsp;=&nbsp;<font color='#2a00ff'>"lady's&nbsp;man"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;noun[35]&nbsp;=&nbsp;<font color='#2a00ff'>"legend"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;noun[36]&nbsp;=&nbsp;<font color='#2a00ff'>"lionheart"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;noun[37]&nbsp;=&nbsp;<font color='#2a00ff'>"princess"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;noun[38]&nbsp;=&nbsp;<font color='#2a00ff'>"cupcake"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String&nbsp;Noun&nbsp;=&nbsp;noun[random];
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><font color='#7f0055'>return</font></strong>&nbsp;Noun;
+<br/>&nbsp;&nbsp;&nbsp;}
+<br/>&nbsp;&nbsp;&nbsp;<strong><font color='#7f0055'>public</font></strong>&nbsp;<strong><font color='#7f0055'>static</font></strong>&nbsp;String&nbsp;adjGen()
+<br/>&nbsp;&nbsp;&nbsp;{
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><font color='#7f0055'>int</font></strong>&nbsp;random&nbsp;=&nbsp;(<strong><font color='#7f0055'>int</font></strong>)(Math.random()*35);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String[]&nbsp;adj&nbsp;=&nbsp;<strong><font color='#7f0055'>new</font></strong>&nbsp;String[36];
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adj[0]=&nbsp;<font color='#2a00ff'>"a&nbsp;kindred"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adj[1]=&nbsp;<font color='#2a00ff'>"a&nbsp;beautiful"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adj[2]=&nbsp;<font color='#2a00ff'>"a&nbsp;dazzling"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adj[3]=&nbsp;<font color='#2a00ff'>"an&nbsp;elegant"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adj[4]=&nbsp;<font color='#2a00ff'>"a&nbsp;fancy"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adj[5]=&nbsp;<font color='#2a00ff'>"a&nbsp;glamorous"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adj[6]=&nbsp;<font color='#2a00ff'>"a&nbsp;gorgeous"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adj[7]=&nbsp;<font color='#2a00ff'>"a&nbsp;handsome"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adj[8]=&nbsp;<font color='#2a00ff'>"a&nbsp;magnificent"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adj[9]=&nbsp;<font color='#2a00ff'>"a&nbsp;muscular"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adj[10]=&nbsp;<font color='#2a00ff'>"a&nbsp;lionhearted"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adj[11]=&nbsp;<font color='#2a00ff'>"a&nbsp;delightful"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adj[12]=&nbsp;<font color='#2a00ff'>"a&nbsp;wonderful"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adj[13]=&nbsp;<font color='#2a00ff'>"an&nbsp;amazing"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adj[14]=&nbsp;<font color='#2a00ff'>"a&nbsp;stupendous"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adj[15]=&nbsp;<font color='#2a00ff'>"a&nbsp;powerful"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adj[16]=&nbsp;<font color='#2a00ff'>"an&nbsp;ambitious"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adj[17]=&nbsp;<font color='#2a00ff'>"a&nbsp;faithful"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adj[18]=&nbsp;<font color='#2a00ff'>"a&nbsp;happy"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adj[19]=&nbsp;<font color='#2a00ff'>"a&nbsp;victorious"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adj[20]=&nbsp;<font color='#2a00ff'>"a&nbsp;zealous"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adj[21]=&nbsp;<font color='#2a00ff'>"a&nbsp;zesty"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adj[22]=&nbsp;<font color='#2a00ff'>"a&nbsp;lively"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adj[23]=&nbsp;<font color='#2a00ff'>"a&nbsp;witty"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adj[24]=&nbsp;<font color='#2a00ff'>"a&nbsp;spectacular"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adj[25]=&nbsp;<font color='#2a00ff'>"a&nbsp;melodic"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adj[26]=&nbsp;<font color='#2a00ff'>"a&nbsp;modern"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adj[27]=&nbsp;<font color='#2a00ff'>"a&nbsp;delicious"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adj[28]=&nbsp;<font color='#2a00ff'>"a&nbsp;sweet"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adj[29]=&nbsp;<font color='#2a00ff'>"a&nbsp;cuddly"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adj[30]=&nbsp;<font color='#2a00ff'>"a&nbsp;smart"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adj[31]=&nbsp;<font color='#2a00ff'>"a&nbsp;sassy"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adj[32]=&nbsp;<font color='#2a00ff'>"a&nbsp;strong"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adj[33]=&nbsp;<font color='#2a00ff'>"a&nbsp;limitless"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adj[34]=&nbsp;<font color='#2a00ff'>"an&nbsp;important"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adj[35]=&nbsp;<font color='#2a00ff'>"an&nbsp;impressive"</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String&nbsp;Adjective&nbsp;=&nbsp;adj[random];
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><font color='#7f0055'>return</font></strong>&nbsp;Adjective;
+<br/>&nbsp;&nbsp;&nbsp;}
+<br/>}<div style='text-align:right;BORDER-TOP: #ccc 1px dashed'><a href="http://www.togotutor.com/code-to-html/java-to-html.php" target="_blank">Code Formatted by ToGoTutor</a></div></div>
