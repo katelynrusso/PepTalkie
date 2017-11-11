@@ -4,14 +4,27 @@ public class positivityGen
 {
    public static void main(String[] args)
    {
-      String noun = noun();
-      String adjective = adjGen();
-      String aOrAn = aOrAn(adjective);
-      System.out.println("You are "+ aOrAn + " " + adjective + " "+ noun+ "!");
+      System.out.println("On a scale from 1-9, how sad are you?");
+      Scanner input = new Scanner(System.in);
+      int sadLevel = input.nextInt();
+      if(sadLevel==1)
+      {
+         System.out.println("You're too happy for this program... please leave.");
+      }
+      else if (sadLevel>=2 && sadLevel<=8)
+      {
+        String noun = noun();
+        String adjective = adjGen();
+        System.out.println("You are "+ adjective + " "+ noun+ "!"); 
+      }
+      else
+      {
+         System.out.println("Please go to healthcenter.gwu.edu for professional help.");
+      }
    }
    public static String noun()
    {
-      int random = (int)(Math.random()*39+1);
+      int random = (int)(Math.random()*38);
       String[] noun = new String[39];
       noun[0] = "ace-in-the-hole";
       noun[1] = "benefactor";
@@ -36,7 +49,7 @@ public class positivityGen
       noun[20] = "garden";
       noun[21] = "gem";
       noun[22] = "genius";
-      noun[23] = "god";
+      noun[23] = "tamale";
       noun[24] = "goddess";
       noun[25] = "guardian";
       noun[26] = "mom";
@@ -57,61 +70,45 @@ public class positivityGen
    }
    public static String adjGen()
    {
-      int random = (int)(Math.random()*36+1);
+      int random = (int)(Math.random()*35);
       String[] adj = new String[36];
-      adj[0]= "kindred";
-      adj[1]= "beautiful";
-      adj[2]= "dazzling";
-      adj[3]= "elegant";
-      adj[4]= "fancy";
-      adj[5]= "glamorous";
-      adj[6]= "gorgeous";
-      adj[7]= "handsome";
-      adj[8]= "magnificent";
-      adj[9]= "muscular";
-      adj[10]= "lionhearted";
-      adj[11]= "delightful";
-      adj[12]= "wonderful";
-      adj[13]= "amazing";
-      adj[14]= "stupendous";
-      adj[15]= "powerful";
-      adj[16]= "ambitious";
-      adj[17]= "faithful";
-      adj[18]= "happy";
-      adj[19]= "victorious";
-      adj[20]= "zealous";
-      adj[21]= "zesty";
-      adj[22]= "lively";
-      adj[23]= "witty";
-      adj[24]= "spectacular";
-      adj[25]= "melodic";
-      adj[26]= "modern";
-      adj[27]= "delicious";
-      adj[28]= "sweet";
-      adj[29]= "cuddly";
-      adj[30]= "smart";
-      adj[31]= "sassy";
-      adj[32]= "strong";
-      adj[33]= "limitless";
-      adj[34]= "important";
-      adj[35]= "impressive";
+      adj[0]= "a kindred";
+      adj[1]= "a beautiful";
+      adj[2]= "a dazzling";
+      adj[3]= "an elegant";
+      adj[4]= "a fancy";
+      adj[5]= "a glamorous";
+      adj[6]= "a gorgeous";
+      adj[7]= "a handsome";
+      adj[8]= "a magnificent";
+      adj[9]= "a muscular";
+      adj[10]= "a lionhearted";
+      adj[11]= "a delightful";
+      adj[12]= "a wonderful";
+      adj[13]= "an amazing";
+      adj[14]= "a stupendous";
+      adj[15]= "a powerful";
+      adj[16]= "an ambitious";
+      adj[17]= "a faithful";
+      adj[18]= "a happy";
+      adj[19]= "a victorious";
+      adj[20]= "a zealous";
+      adj[21]= "a zesty";
+      adj[22]= "a lively";
+      adj[23]= "a witty";
+      adj[24]= "a spectacular";
+      adj[25]= "a melodic";
+      adj[26]= "a modern";
+      adj[27]= "a delicious";
+      adj[28]= "a sweet";
+      adj[29]= "a cuddly";
+      adj[30]= "a smart";
+      adj[31]= "a sassy";
+      adj[32]= "a strong";
+      adj[33]= "a limitless";
+      adj[34]= "an important";
+      adj[35]= "an impressive";
       String Adjective = adj[random];
       return Adjective;
    }
-   public static String aOrAn(String adjective)
-   {
-      String aOrAn= "kjfhadskjf";
-      String firstLetter = adjective.substring(0,1);
-      if (firstLetter=="a"||firstLetter=="e"||firstLetter=="i"||firstLetter=="o"||firstLetter=="u")
-      {
-         aOrAn= "an";
-         return aOrAn;
-      }
-      else
-      {
-         aOrAn= "a";
-         return aOrAn;
-      }
-   }
-   
 }
