@@ -1,5 +1,3 @@
-var sadnessLevel = prompt('On a scale from 1-9, how sad are you?', '<number goes here>');
-
 function getAdj ()
 {
 	var adjectives = ['a kindred', 'a beautiful', 'a dazzling', 'an elegant', 'a fancy', 'a glamorous', 'a gorgeous', 
@@ -21,11 +19,10 @@ function getNoun ()
 	return nouns[randomNumber];
 }
 
+/*
 if (sadnessLevel===1)
 	console.log("You're too happy for this program... please leave.");
 else if (sadnessLevel===9)
 	console.log("Please go to healthcenter.gwu.edu for professional help");
 else
-	console.log("You are", getAdj(), getNoun());
-
-console.log('hi');
+	console.log("You are", getAdj(), getNoun());*/
