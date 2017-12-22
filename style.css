@@ -1,3 +1,10 @@
+body {
+	background-image: url("WalkieTalkie.png");
+	background-repeat: no-repeat;
+	background-position: center 250px;
+	background-size: 90%;
+}
+
 img.logo {
     display: block;
     margin: auto;
@@ -9,3 +16,11 @@ img.walkie {
     margin: auto;
     width: 90%;
 }
+
+button {
+  margin-top: 20px;
+  line-height: 60px;
+  font-weight: bold;
+  padding: 0 40px;
+  background: salmon;
+  border: none;
